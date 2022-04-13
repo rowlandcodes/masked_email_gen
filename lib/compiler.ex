@@ -4,11 +4,11 @@ defmodule Compiler do
   end
 
   def load_adjectives() do
-    File.read!("corpus/adj.nice") |> String.split("\n")
+    File.read!("corpus/adj.txt") |> String.split("\n")
   end
 
   def load_nouns() do
-    File.read!("corpus/noun.nice") |> String.split("\n")
+    File.read!("corpus/noun.txt") |> String.split("\n")
   end
 
   def compile_corpus(adjectives, nouns) do
